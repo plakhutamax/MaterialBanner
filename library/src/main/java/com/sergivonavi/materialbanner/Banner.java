@@ -316,7 +316,12 @@ public class Banner extends ViewGroup implements BannerInterface {
         if (a.hasValue(R.styleable.Banner_lineOpacity)) {
             mLine.setAlpha(a.getFloat(R.styleable.Banner_lineOpacity, 0.12f));
         }
-
+        if (a.hasValue(R.styleable.Banner_paddingTop)) {
+            mContainerPaddingTopOneLine = a.getDimensionPixelSize(R.styleable.Banner_paddingTop, 0);
+        }
+        if (a.hasValue(R.styleable.Banner_paddingTopMultiline)) {
+            mContainerPaddingTopMultiline = a.getDimensionPixelSize(R.styleable.Banner_paddingTopMultiline, 0);
+        }
         int contentPaddingStart = a.getDimensionPixelSize(R.styleable.Banner_contentPaddingStart,
                 0);
         int contentPaddingEnd = a.getDimensionPixelSize(R.styleable.Banner_contentPaddingEnd, 0);

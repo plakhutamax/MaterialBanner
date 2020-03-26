@@ -10,6 +10,9 @@
         <attr name="iconTint" format="color" />
         <!-- Message text to display in the Banner. -->
         <attr name="messageText" format="string|reference" />
+        <!-- Container top paddings. -->
+        <attr name="paddingTop" format="dimension" />
+        <attr name="paddingTopMultiline" format="dimension" />
         <!-- Text to display in the left button. -->
         <attr name="buttonLeftText" format="string|reference" />
         <!-- Text to display in the right button. -->
